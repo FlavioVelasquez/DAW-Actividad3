@@ -11,6 +11,10 @@ var tasksRouter = require('./routes/tasks');
 const router = express.Router();
 var cors = require('cors'); 
 
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://127.0.0.1:27017/desarrollowebTareasyMetas')
+
+
 var app = express();
 
 // view engine setup
